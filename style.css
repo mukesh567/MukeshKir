@@ -1,0 +1,60 @@
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+
+/* Item styles */
+.item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* Dragged item styles */
+.item.dragged {
+    opacity: 0.5;
+}
+
+/* Success message styles */
+#successMessage {
+    display: none;
+    color: green;
+    margin: auto;
+}
+
+/* Reset button styles */
+#resetButton {
+    margin: auto;
+    width: 10%;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+}
